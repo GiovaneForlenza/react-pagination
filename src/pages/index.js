@@ -3,6 +3,7 @@ import Posts from "@/components/Post";
 import axios from "axios";
 import { useEffect, useState } from "react";
 
+
 export default function Home() {
   const [posts, setPosts] = useState([]);
   const [loading, setLoading] = useState(false);
@@ -29,7 +30,7 @@ export default function Home() {
   
 
   return (
-    <div>
+    <div className="home-wrapper">
       <h1>My blog</h1>
       <Posts posts={currentPosts} loading={loading} />
       <Pagination

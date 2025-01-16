@@ -1,0 +1,24 @@
+.posts-wrapper {
+  list-style-type: none;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(400px, 1fr));
+  gap: 16px;
+  li {
+    padding: 16px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    transition: all 0.5s;
+    &:hover {
+      cursor: pointer;
+      transform: scale(1.01);
+    }
+    .title,
+    .content {
+      padding: 4px;
+    }
+    .title {
+      border-bottom: 1px solid #000;
+    }
+  }
+}
