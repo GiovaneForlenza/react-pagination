@@ -2,16 +2,18 @@
   list-style-type: none;
   padding: 0;
   display: grid;
-  grid-template-columns: repeat(4, minmax(400px, 1fr));
+  grid-template-columns: repeat(4, minmax(300px, 1fr));
   gap: 16px;
   li {
     padding: 16px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    transition: all 0.5s;
+    transition: all 0.3s;
+    border: 1px solid transparent;
+    height: 200px;
     &:hover {
       cursor: pointer;
-      transform: scale(1.01);
+      border: 1px solid #000;
     }
     .title,
     .content {

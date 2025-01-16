@@ -6,10 +6,10 @@ function Pagination({ postsPerPage, totalPosts, paginate }) {
     pageNumbers.push(index);
   }
   return (
-    <nav>
-      <ul>
+    <nav className="pagination-wrapper">
+      <ul className="pagination-list">
         {pageNumbers.map((number) => (
-          <li key={number}>
+          <li key={number} className="pagination-item">
             <a href="#" onClick={()=>paginate(number)}>{number}</a>
           </li>
         ))}
