@@ -9,8 +9,12 @@ function Pagination({ postsPerPage, totalPosts, paginate }) {
     <nav className="pagination-wrapper">
       <ul className="pagination-list">
         {pageNumbers.map((number) => (
-          <li key={number} className="pagination-item">
-            <a href="#" onClick={()=>paginate(number)}>{number}</a>
+          <li
+            key={number}
+            className="pagination-item"
+            onClick={() => paginate(number)}
+          >
+            {number}
           </li>
         ))}
       </ul>
